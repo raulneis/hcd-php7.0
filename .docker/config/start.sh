@@ -9,17 +9,13 @@ if [ ! -f /var/www/html/env.json ]; then
 fi
 
 if [ -f /var/www/html/composer.json ]; then
-    
+    # composer install
+    echo "ok"
 fi
 
 if [ -f /var/www/html/package.json ]; then
-
+    # npm install
+    echo "ok"
 fi
-
-
-# su -c cd /var/www/html www-data
-
-# composer install
-# npm install
 
 exec supervisord -c /etc/supervisor/supervisord.conf
