@@ -1,0 +1,4 @@
+#!/bin/bash
+
+docker exec --user www-data -it hcdphp70_app_1 "$@"
+# docker exec -it hcdphp70_app_1 "$@"
