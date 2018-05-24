@@ -21,6 +21,9 @@ RUN apt-get update \
                nano \
                nodejs \
                redis-server \
+               libxrender1 \
+               libfontconfig1 \
+               libxext6 \
     && apt-get -y autoremove
     # && apt-get clean \
     # && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
