@@ -46,7 +46,7 @@ COPY config/php/php.ini /usr/local/etc/php/php.ini
 COPY config/supervisor/ /etc/supervisor/
 
 RUN mkdir -p /var/log/redis
-RUN chown redis /var/log/redis -R
+RUN chown redis:redis /var/log/redis -R
 
 RUN mkdir -p /usr/local/etc/apache2
 ADD config/apache2/ /usr/local/etc/apache2/
